@@ -52,7 +52,7 @@ if (config.server.proxyEnabled) {
   app.proxy = true
 }
 
-app.keys = [config.server.cookieSecret]
+// app.keys = [config.server.cookieSecret]
 
 const sessionConfiguration = {
   key: 'fuelrats:session',

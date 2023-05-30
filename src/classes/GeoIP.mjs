@@ -1,18 +1,20 @@
-import maxmind from 'maxmind'
-import path from 'path'
-import config from '../config'
+// import maxmind from 'maxmind'
+// import path from 'path'
+// import config from '../config'
 
-let cityLookup = undefined
-let asnLookup = undefined
+// let cityLookup = undefined
+// let asnLookup = undefined
+const cityLookup = undefined
+const asnLookup = undefined
 
-;(async () => {
-  cityLookup = await maxmind.open(path.join(config.geoip.directory, 'GeoLite2-City.mmdb'))
-  asnLookup = await maxmind.open(path.join(config.geoip.directory, 'GeoLite2-ASN.mmdb'))
+// ;(async () => {
+//   // cityLookup = await maxmind.open(path.join(config.geoip.directory, 'GeoLite2-City.mmdb'))
+//   // asnLookup = await maxmind.open(path.join(config.geoip.directory, 'GeoLite2-ASN.mmdb'))
 
-  if (!cityLookup || !asnLookup) {
-    throw new Error('Failed to load GeoIP databases')
-  }
-})()
+//   if (!cityLookup || !asnLookup) {
+//     throw new Error('Failed to load GeoIP databases')
+//   }
+// })()
 
 
 /**

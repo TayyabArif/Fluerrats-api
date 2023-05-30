@@ -17,7 +17,7 @@ const config = {
     hostname: required('FRAPI_HOSTNAME', [], 'localhost'),
     port: required('FRAPI_PORT', [toNumber], 8080),
     externalUrl: required('FRAPI_URL', [isBaseUrl], 'http://localhost:8080'),
-    cookieSecret: required('FRAPI_COOKIE', [], undefined),
+    // cookieSecret: required('FRAPI_COOKIE', [], undefined),
     proxyEnabled: required('FRAPI_PROXY_ENABLED', [toStrictBoolean], false),
     whitelist: optional('FRAPI_WHITELIST', [toArray], []),
   },
@@ -47,7 +47,7 @@ const config = {
     password: recommended('FRAPI_IRC_PASSWORD', [], undefined),
   },
   geoip: {
-    directory: required('FRAPI_GEOIP_DIRECTORY', [], undefined),
+    // directory: required('FRAPI_GEOIP_DIRECTORY', [], undefined),
   },
   announcer: {
     url: recommended('FRAPI_ANNOUNCER,URL', [], 'https://announcer-dev.fuelrats.com/api'),
